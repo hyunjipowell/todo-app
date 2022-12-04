@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <form id="login" class="hidden">
+        <div class="form-wrap">
+            <div>
+                <p class="uppercase">Hello!</p>
+                <div class="form-wrap__input">
+                    <span>My name is</span>
+                    <input type="text" maxlength="10" required>
+                    <input type="submit" value="">
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <div id="userPage">
+        <div class="userPage-wrap">
+            <header>
+                <h1 id="username"></h1>
+                <a href="" id="color"></a>
+            </header>
+            <main>
+                <section class="todo">
+                    <span class="uppercase">Todo</span>
+                    <form id="todo-form">
+                        <input type="text" required placeholder="Enter new to do">
+                    </form>
+                    <ul id="todo-list"></ul>
+                </section>
+                <section class="info">
+                    <div class="info-quote">
+                        <span class="uppercase">Quote</span>
+                        <div class="info-quote__detail">
+                            <i class="fas fa-light fa-quote-left"></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="info-weather">
+                        <span class="uppercase">location / weather</span>
+                        <div class="info-weather__detail">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="info-time">
+                        <span class="info-time__hours"></span>
+                        <span class="info-time__mins"></span>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    
+    <script src="js/login.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>

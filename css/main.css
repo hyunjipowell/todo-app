@@ -1,0 +1,110 @@
+#userPage{
+    width: 100%;  
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.userPage-wrap{
+    border: 1px solid var(--sub-color);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--sub-color);
+    padding: 1rem;
+}
+
+
+header h1{
+    font-size: 15px;
+    color: var(--sub-color);
+}
+
+header #color{
+    background-color: var(--sub-color);
+    -webkit-mask-image: url(../images/icon-color.svg);
+    mask-image: url(../images/icon-color.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    transform: rotate(-45deg);
+    transition: ease all 300ms;
+    width: 25px;
+    height: 25px;
+}
+
+header #color:hover{
+    transform: rotate(0deg);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: calc(100% - 57px);
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-weather,
+.info-quote{
+    color: var(--sub-color);
+    border-bottom: 1px solid;
+    padding: 1rem;
+    height: 25%;
+}
+
+
+.info-weather p{
+    padding: 1rem 0;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.info-weather__detail{
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.info-weather__detail p:first-child{
+    margin-right: 1rem;
+}
+.info-quote__detail{
+    text-align: center;
+}
+
+.info-quote__detail svg{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.info-quote__detail span{
+    display: block;
+    font-size: 20px;
+}
+
+.info-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 14vw;
+    line-height: 11vw;
+    padding: 1rem;
+    align-items: end;
+    font-family: 'Abril Fatface', cursive;
+    transition: ease all 300ms;
+    margin-bottom: 10px;
+    color: var(--sub-color);
+    height: 50%;
+}
