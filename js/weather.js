@@ -1,15 +1,5 @@
 const API_KEY = "3398fa64170a703285e5f59bbfee82ef";
 
-var getWeather = function(data) {
-    $.getJSON('http://api.openweathermap.org/data/2.5/weather', {
-        lat: data.lat,
-        lon: data.lon,
-        appid: API_KEY
-    }, showWeather, 'jsonp');
-};
-
-
-
 function onGeoWorking(position){
     const lat= position.coords.latitude;
     const lon = position.coords.longitude;
