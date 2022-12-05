@@ -3,7 +3,7 @@
         overflow: unset;
     }
     main{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
+        flex-wrap: wrap;
     }
     #login span{
         font-size: 18px;
@@ -11,25 +11,33 @@
     .todo{
         border: unset;
         border-bottom: 1px solid;
-        height: auto;
+        width: 100%;
     }
     .info{
-        flex-direction: unset;
+        display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
     .info-quote{
         width: 100%;
     }
-    .info-weather, .info-quote{
-        height: auto;
+
+    .info-mob{
+        display: flex;
+        width: 100%;
+    }
+    .info-weather, .info-time{
+        width: 50%;
     }
 
+    .info-weather{
+        border-bottom: unset;
+        border-right: 1px solid;
+    }
     .info-time{
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
-        height: auto;
-        width: 40%;
     }
     .info-weather p{
        font-size: 40px;
@@ -37,6 +45,15 @@
 }
 
 @media only screen and (max-width: 640px) {
+    .uppercase{
+        font-size: 10px;
+    }
+
+    .info-mob{
+        flex-wrap: wrap;
+    }
+
+
     #todo-form input::placeholder,
     #todo-form input{
         font-size: 15px;
@@ -47,6 +64,11 @@
     }
     .info-quote__detail span{
         font-size: 15px;
+    }
+
+    .info-weather{
+        border-right: unset;
+        border-bottom: 1px solid;
     }
 
     .info-weather, .info-time{

@@ -18,13 +18,29 @@
     margin-bottom: 2rem;
 }
 
+#login .uppercase{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 500ms forwards 300ms;
+}
+
+@keyframes fadeUp {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 #login span{ 
     font-size: 3vw;
 }
 #login input{
     border: unset;
 }
-
 #login .form-wrap__input{
     display: flex;
     justify-content: center;
