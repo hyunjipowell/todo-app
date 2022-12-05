@@ -1,6 +1,7 @@
 @media only screen and (max-width: 820px) {
     body{
         overflow: unset;
+        height: auto;
     }
     main{
         flex-wrap: wrap;
@@ -22,12 +23,8 @@
         width: 100%;
     }
 
-    .info-mob{
-        display: flex;
-        width: 100%;
-    }
     .info-weather, .info-time{
-        width: 50%;
+        width: 44.8%;
     }
 
     .info-weather{
@@ -44,13 +41,9 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 685px) {
     .uppercase{
         font-size: 10px;
-    }
-
-    .info-mob{
-        flex-wrap: wrap;
     }
 
 
