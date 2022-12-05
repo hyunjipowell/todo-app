@@ -57,15 +57,3 @@ function chagedColor(e){
 }
 
 colorButton.addEventListener("click", chagedColor);
-
-
-//   const body = document.querySelector("body"),
-//     button = document.querySelector("button");
-//   function changedColor() {
-//     const colorOne = colors[Math.floor(Math.random() * colors.length)];
-//     const colorTwo = colors[Math.floor(Math.random() * colors.length)];
-//     body.style.backgroundImage = `linear-gradient(0.25turn, ${colorOne}, ${colorTwo})`;
-//   }
-  
-//   button.addEventListener("click", changedColor);
-  
