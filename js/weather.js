@@ -19,11 +19,10 @@ function onGeoWorking(position){
           };
 
         const city= document.querySelector(".info-weather p:first-child");
-        
         let weathers = document.querySelector(".info-weather p:last-child");
         let icon = (data.weather[0].icon).substr(0,2);
 
-        city.innerText = data.name;
+        city.innerText = `${data.name}, ${ Math.round(data.main.temp)}°C`;
         weathers.innerHTML = `<i class="${weatherIcon[icon]}"></i>`;
     })
 }
