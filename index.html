@@ -53,9 +53,36 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="info-time">
-                        <span class="info-time__hours"></span>
-                        <span class="info-time__mins"></span>
+                    <div class="info-date">
+                        <div class="info-cal">
+                            <div class="info-cal__head">
+                                <button id="info-cal__head-prev"><i class="fas fa-arrow-left"></i></button>
+                                <div class="info-cal__headWrap">
+                                    <div id="info-cal__head-year"></div>
+                                    <div id="info-cal__head-month"></div>
+                                </div>
+                                <button id="info-cal__head-next"><i class="fas fa-arrow-right"></i></button>
+                            </div>
+                            <div id="info-cal__weekdays">
+                                <div>S</div>
+                                <div>M</div>
+                                <div>T</div>
+                                <div>W</div>
+                                <div>T</div>
+                                <div>F</div>
+                                <div>S</div>
+                            </div>
+                            <div id="calendar">
+
+                            </div>
+                        </div>
+                        <div class="info-time">
+                            <div class="info-time-wrap">
+                                <span class="info-time__hours"></span>
+                                <span class="info-time__mob">:</span>
+                                <span class="info-time__mins"></span>
+                            </div>
+                        </div>
                     </div>
                 
                 </section>
@@ -68,6 +95,7 @@
     <script src="js/time.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="js/background.js"></script>
 </body>
 </html>

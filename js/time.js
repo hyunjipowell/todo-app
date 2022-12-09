@@ -1,3 +1,4 @@
+
 const clock = document.querySelector(".info-time");
 const hours = document.querySelector(".info-time__hours");
 const mins = document.querySelector(".info-time__mins");

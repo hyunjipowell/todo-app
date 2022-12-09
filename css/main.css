@@ -49,8 +49,12 @@ main{
     height: calc(100% - 57px);
 }
 
-section{
-    width: 50%;
+.todo{
+    width: 40%;
+}
+
+.info{
+    width: 60%;
 }
 
 .info{
@@ -96,16 +100,95 @@ section{
     font-size: 20px;
 }
 
-.info-time{
+.info-date{
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    font-size: 14vw;
-    line-height: 11vw;
+    align-items: center;
     padding: 1rem;
+}
+.info-cal{
+    width: 60%;
+    color: var(--sub-color);
+}
+
+.info-cal__head{
+    display: flex;
+    justify-content: space-around;
     align-items: end;
+    margin-bottom: 2rem;
+    /* padding: 0 1.5rem; */
+}
+.info-cal__headWrap{
+    text-align: center;
+}
+
+.info-cal__head-year{
+    font-size: 14px;
+}
+
+.info-cal__head-month{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.info-cal__head button{
+    border: unset;
+    background-color: unset;
+    color: var(--sub-color);
+    cursor: pointer;
+}
+
+.info-cal #info-cal__weekdays,
+.info-cal #calendar{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    text-align: center;
+    gap: 1rem;
+}
+
+.info-cal #info-cal__weekdays{
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.info-time{
+    width: 40%;
+    font-size: 11vw;
+    line-height: 9vw;
+    padding: 1rem;
     font-family: 'Abril Fatface', cursive;
     transition: ease all 300ms;
     margin-bottom: 10px;
     color: var(--sub-color);
+}
+
+.info-time-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-time__mob{
+    display: none;
+}
+
+#currentDay{
+    position: relative;
+    color: var(--main-color);
+}
+
+#currentDay:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--sub-color);
+    display: block;
+    content: '';
+    z-index: -1;
+    border-radius: 15px;
 }

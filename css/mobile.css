@@ -23,18 +23,35 @@
         width: 100%;
     }
 
-    .info-weather, .info-time{
-        width: 44.8%;
+    .info-weather{
+        width: 100%;
     }
 
-    .info-weather{
-        border-bottom: unset;
-        border-right: 1px solid;
+    .info-date{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-cal{
+        width: 100%;
+        order: 2;
+        padding: 2rem;
     }
     .info-time{
-        justify-content: center;
-        align-items: center;
         margin-bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid;
+        padding: 2rem;
+    }
+
+    .info-time-wrap{
+        justify-content: center;
+        flex-direction: unset;
+    }
+
+    .info-time__mob{
+        display: inline-block;
     }
     .info-weather p{
        font-size: 30px;
