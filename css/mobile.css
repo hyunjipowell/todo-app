@@ -3,6 +3,10 @@
         overflow: unset;
         height: auto;
     }
+
+    .form-wrap{
+        height: 100vh;
+    }
     main{
         flex-wrap: wrap;
     }
